@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SalidasWindow</class>
+ <widget class="QWidget" name="SalidasWindow">
+  <property name="windowTitle">
+   <string>Registrar Salida</string>
+  </property>
+  <property name="minimumSize">
+   <size><width>600</width><height>400</height></size>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #e6f2ff;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_medicamento">
+       <property name="text">
+        <string>Medicamento:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="combo_medicamento"/>
+     </item>
+
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_fecha">
+       <property name="text">
+        <string>Fecha de salida:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QDateEdit" name="date_salida">
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_cantidad">
+       <property name="text">
+        <string>Cantidad (cajas):</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QSpinBox" name="spin_cantidad">
+       <property name="minimum">
+        <number>1</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+
+   <item>
+    <widget class="QPushButton" name="btn_guardar">
+     <property name="text">
+      <string>Guardar salida</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #BB8FCE; font-weight: bold; padding: 6px; border-radius: 5px;</string>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QPushButton" name="btn_ver_salidas">
+     <property name="text">
+      <string>Ver salidas registradas</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #BB8FCE; font-weight: bold; padding: 6px; border-radius: 5px;</string>
+     </property>
+    </widget>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

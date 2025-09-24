@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowTitle">
+   <string>Inventario de Medicamentos</string>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: #e6f2ff;</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+   
+
+    <!-- Título -->
+    <item>
+     <widget class="QLabel" name="labelTitulo">
+      <property name="text">
+       <string>Sistema de Inventario de Medicamentos</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 24px; font-weight: bold; color: #333;</string>
+      </property>
+     </widget>
+    </item>
+
+    <!-- Usuario logueado -->
+    <item>
+     <widget class="QLabel" name="label_usuario">
+      <property name="text">
+       <string>Usuario:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight</set>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 12px; color: #555;</string>
+      </property>
+     </widget>
+    </item>
+
+    <!-- Botones principales -->
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+
+      <item row="0" column="0">
+       <widget class="QPushButton" name="btn_medicamentos">
+        <property name="text">
+         <string>Medicamentos</string>
+        </property>
+        <property name="minimumSize">
+         <size><width>200</width><height>60</height></size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+         QWidget {
+        background-color: #D6EAF8;  /* azul claro */
+    }
+    QPushButton {
+        background-color: #BB8FCE;  /* morado claro */
+        color: black;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    QPushButton:hover {
+        background-color: #A569BD;
+    }
+    QLineEdit {
+        background-color: white;
+        border: 1px solid gray;
+        padding: 5px;
+        border-radius: 3px;
+    }
+    QLabel {
+        font-weight: bold;
+    }</string>
+        </property>
+       </widget>
+      </item>
+
+      <item row="0" column="1">
+       <widget class="QPushButton" name="btn_entradas">
+        <property name="text">
+         <string>Entradas</string>
+        </property>
+        <property name="minimumSize">
+         <size><width>200</width><height>60</height></size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+         QWidget {
+        background-color: #D6EAF8;  /* azul claro */
+    }
+    QPushButton {
+        background-color: #BB8FCE;  /* morado claro */
+        color: black;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    QPushButton:hover {
+        background-color: #A569BD;
+    }
+    QLineEdit {
+        background-color: white;
+        border: 1px solid gray;
+        padding: 5px;
+        border-radius: 3px;
+    }
+    QLabel {
+        font-weight: bold;
+    }</string>
+        </property>
+       </widget>
+      </item>
+
+      <item row="1" column="0">
+       <widget class="QPushButton" name="btn_salidas">
+        <property name="text">
+         <string>Salidas</string>
+        </property>
+        <property name="minimumSize">
+         <size><width>200</width><height>60</height></size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+         QWidget {
+        background-color: #D6EAF8;  /* azul claro */
+    }
+    QPushButton {
+        background-color: #BB8FCE;  /* morado claro */
+        color: black;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    QPushButton:hover {
+        background-color: #A569BD;
+    }
+    QLineEdit {
+        background-color: white;
+        border: 1px solid gray;
+        padding: 5px;
+        border-radius: 3px;
+    }
+    QLabel {
+        font-weight: bold;
+    }</string>
+        </property>
+       </widget>
+      </item>
+
+      <item row="1" column="1">
+       <widget class="QPushButton" name="btn_inventario">
+        <property name="text">
+         <string>Inventario Actual</string>
+        </property>
+        <property name="minimumSize">
+         <size><width>200</width><height>60</height></size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+         QWidget {
+        background-color: #D6EAF8;  /* azul claro */
+    }
+    QPushButton {
+        background-color: #BB8FCE;  /* morado claro */
+        color: black;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    QPushButton:hover {
+        background-color: #A569BD;
+    }
+    QLineEdit {
+        background-color: white;
+        border: 1px solid gray;
+        padding: 5px;
+        border-radius: 3px;
+    }
+    QLabel {
+        font-weight: bold;
+    }</string>
+        </property>
+       </widget>
+      </item>
+
+      <item row="2" column="0">
+       <widget class="QPushButton" name="btn_reporte">
+        <property name="text">
+         <string>Generar Reporte</string>
+        </property>
+        <property name="minimumSize">
+         <size><width>200</width><height>60</height></size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+         QWidget {
+        background-color: #D6EAF8;  /* azul claro */
+    }
+    QPushButton {
+        background-color: #BB8FCE;  /* morado claro */
+        color: black;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    QPushButton:hover {
+        background-color: #A569BD;
+    }
+    QLineEdit {
+        background-color: white;
+        border: 1px solid gray;
+        padding: 5px;
+        border-radius: 3px;
+    }
+    QLabel {
+        font-weight: bold;
+    }</string>
+        </property>
+       </widget>
+      </item>
+
+      <item row="2" column="1">
+       <widget class="QPushButton" name="btn_categorias">
+        <property name="text">
+         <string>Categorías</string>
+        </property>
+        <property name="minimumSize">
+         <size><width>200</width><height>60</height></size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+         QWidget {
+        background-color: #D6EAF8;  /* azul claro */
+    }
+    QPushButton {
+        background-color: #BB8FCE;  /* morado claro */
+        color: black;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    QPushButton:hover {
+        background-color: #A569BD;
+    }
+    QLineEdit {
+        background-color: white;
+        border: 1px solid gray;
+        padding: 5px;
+        border-radius: 3px;
+    }
+    QLabel {
+        font-weight: bold;
+    }</string>
+        </property>
+       </widget>
+      </item>
+
+      <item row="3" column="0" colspan="2">
+       <widget class="QPushButton" name="btn_salir">
+        <property name="text">
+         <string>Salir</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #ff9999; font-size: 14px; font-weight: bold;</string>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>400</width>
+          <height>60</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+
+     </layout>
+    </item>
+
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

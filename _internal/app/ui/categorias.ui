@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CategoriasWindow</class>
+ <widget class="QWidget" name="CategoriasWindow">
+  <property name="windowTitle">
+   <string>Gestión de Categorías</string>
+  </property>
+  <property name="minimumSize">
+   <size><width>600</width><height>400</height></size>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #e6f2ff;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="titulo">
+     <property name="text">
+      <string>Gestión de Categorías</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 20px; font-weight: bold;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout">
+     <item>
+      <widget class="QLineEdit" name="input_categoria">
+       <property name="placeholderText">
+        <string>Nombre de nueva categoría</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_agregar">
+       <property name="text">
+        <string>Agregar</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #BB8FCE; font-weight: bold;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tabla_categorias">
+     <property name="columnCount">
+      <number>2</number>
+     </property>
+     <property name="rowCount">
+      <number>0</number>
+     </property>
+     <column>
+      <property name="text"><string>ID</string></property>
+     </column>
+     <column>
+      <property name="text"><string>Nombre</string></property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

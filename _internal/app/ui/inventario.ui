@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InventarioWindow</class>
+ <widget class="QWidget" name="InventarioWindow">
+  <property name="windowTitle">
+   <string>Inventario Actual</string>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #e6f2ff;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   
+   <!-- Tabla de Inventario -->
+   <item>
+    <widget class="QTableWidget" name="tabla_inventario">
+     <property name="columnCount">
+      <number>5</number>
+     </property>
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: white;</string>
+     </property>
+     <column>
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Nombre</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Presentación</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Categoría</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Existencia (cajas)</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+
+   <!-- Botón Exportar -->
+   <item>
+    <widget class="QPushButton" name="btn_exportar_excel">
+     <property name="text">
+      <string>Exportar a Excel</string>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>200</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #BB8FCE; font-weight: bold; border-radius: 5px;</string>
+     </property>
+    </widget>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

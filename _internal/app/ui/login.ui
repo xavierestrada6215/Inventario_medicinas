@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginWindow</class>
+ <widget class="QWidget" name="LoginWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Login</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+    QWidget {
+        background-color: #D6EAF8;  /* azul claro */
+    }
+    QPushButton {
+        background-color: #BB8FCE;  /* morado claro */
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    QPushButton:hover {
+        background-color: #A569BD;
+    }
+    QLineEdit {
+        background-color: white;
+        border: 1px solid gray;
+        padding: 5px;
+        border-radius: 3px;
+    }
+    QLabel {
+        font-weight: bold;
+    }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0">
+   <item>
+    <widget class="QLabel" name="label_title">
+     <property name="styleSheet">
+      <string notr="true">font-size: 20px;</string>
+     </property>
+     <property name="text">
+      <string>Iniciar Sesión</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="input_usuario">
+     <property name="placeholderText">
+      <string>Usuario</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="input_contrasena">
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+     <property name="placeholderText">
+      <string>Contraseña</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btn_login">
+     <property name="text">
+      <string>Ingresar</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

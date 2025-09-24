@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReporteWindow</class>
+ <widget class="QWidget" name="ReporteWindow">
+  <property name="windowTitle">
+   <string>Generar Reportes</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #e6f2ff;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Generar Reporte de Inventario</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 18px; font-weight: bold;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btn_generar">
+     <property name="text">
+      <string>Generar Excel</string>
+     </property>
+     <property name="minimumSize">
+      <size><width>200</width><height>50</height></size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #BB8FCE; font-weight: bold;</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

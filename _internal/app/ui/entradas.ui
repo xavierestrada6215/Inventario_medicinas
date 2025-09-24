@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EntradasWindow</class>
+ <widget class="QWidget" name="EntradasWindow">
+  <property name="windowTitle">
+   <string>Registrar Entrada de Medicamentos</string>
+  </property>
+  <property name="minimumSize">
+   <size><width>800</width><height>600</height></size>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #e6f2ff;</string>
+  </property>
+
+  <layout class="QVBoxLayout" name="verticalLayout">
+
+   <item>
+    <widget class="QLabel" name="label_titulo">
+     <property name="text">
+      <string>Registrar Entrada</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 20px; font-weight: bold;</string>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <layout class="QGridLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_fecha">
+       <property name="text">
+        <string>Fecha de entrada:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QDateEdit" name="input_fecha">
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_medicamento">
+       <property name="text">
+        <string>Medicamento:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="combo_medicamentos"/>
+     </item>
+
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_cantidad">
+       <property name="text">
+        <string>Cantidad (cajas):</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QSpinBox" name="input_cantidad">
+       <property name="minimum">
+        <number>1</number>
+       </property>
+      </widget>
+     </item>
+
+     <item row="3" column="1">
+      <widget class="QPushButton" name="btn_agregar">
+       <property name="text">
+        <string>Agregar a Entrada</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #BB8FCE; font-weight: bold;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+
+   <item>
+    <widget class="QTableWidget" name="tabla_entrada">
+     <column>
+      <property name="text"><string>Medicamento</string></property>
+     </column>
+     <column>
+      <property name="text"><string>Cantidad</string></property>
+     </column>
+    </widget>
+   </item>
+
+   <item>
+    <layout class="QHBoxLayout">
+     <item>
+      <widget class="QPushButton" name="btn_guardar">
+       <property name="text">
+        <string>Guardar Entrada</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #BB8FCE; font-weight: bold;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_ver_entradas">
+       <property name="text">
+        <string>Ver Entradas</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #A3E4D7; font-weight: bold;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
